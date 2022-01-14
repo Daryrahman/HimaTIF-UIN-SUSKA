@@ -1,0 +1,503 @@
+/*
+font-family: 'Righteous', cursive;
+font-family: 'Ruda', sans-serif; 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ruda&display=swap');
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-righteous {
+    font-family: 'Righteous', cursive;
+}
+
+.font-ruda {
+    font-family: 'Ruda', sans-serif;
+}
+
+.text-light-blue {
+    color: #3EB3D9;
+}
+
+.text-dark-blue {
+    color: #064D79;
+}
+
+.bg-light-blue {
+    background: #3EB3D9;
+}
+
+.bg-dark-blue {
+    background: #064D79;
+}
+
+.bg-acara {
+    background: #064D79;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h2 {
+    font-size: 22.5px;
+    letter-spacing: 2px;
+}
+
+.logo p {
+    font-size: 11px;
+    letter-spacing: 1.6px;
+}
+
+.active {
+    font-weight: bold;
+    color: #064D79 !important;
+}
+
+.jumbotron {
+    background: linear-gradient(#000000ab, #000000ab), url("../img/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vw;
+    margin-top: 50px;
+}
+
+.jumbo-text {
+    padding-top: 10vw;
+}
+
+.jumbo-text h1 {
+    font-size: 12vw;
+}
+
+.jumbo-text p {
+    letter-spacing: 1px;
+    font-size: 4vw;
+}
+
+.jumbo-text input {
+    border-color: #fff;
+    border-radius: 20px;
+    color: #3EB3D9;
+    font-size: 3.3vw;
+    letter-spacing: 1px;
+}
+
+.jumbo-text input:hover {
+    color: #fff;
+    background: #3EB3D9;
+    border-color: #3EB3D9;
+}
+
+.ctn-title h1 {
+    font-size: 10vw;
+}
+
+.acara-title h1 {
+    font-size: 10vw;
+}
+
+.ctn-title input {
+    border-color: #064D79;
+    color: #064D79;
+    border-radius: 20px;
+}
+
+.ctn-title input:hover {
+    border-color: #064D79;
+    background: #064D79;
+}
+
+.ctn-prev img {
+    border-radius: 20px;
+    height: 60vw;
+}
+
+.vm-ctn {
+    text-align: justify;
+}
+
+.vm-ctn h6 {
+    letter-spacing: 1.5px;
+}
+
+.copyright {
+    letter-spacing: 1px;
+    font-size: 2.3vw;
+}
+
+.acara-img img {
+    border-radius: 20px;
+    height: 50vw;
+}
+
+.acara-ket button {
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.acara-ket button:hover {
+    color: #064D79 !important;
+}
+
+.acara-explain p {
+    text-align: justify;
+    word-break: break-all;
+}
+
+.modal-footer button:hover {
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.berita {
+    margin: 10vw 0;
+}
+
+.profile-page {
+    background: linear-gradient(#ffffffe1, #ffffffe1), url("../img/geometry-bg.jpg");
+    background-attachment: fixed;
+}
+
+.page-title {
+    font-size: 11vw;
+    width: fit-content;
+    margin: 0 auto;
+    border-color: #064D79 !important;
+}
+
+.page-logo {
+    width: 51vw;
+    height: 51vw;
+}
+
+.profile-ctn h1 {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 6.5vw;
+}
+
+.profile-ctn p {
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 4vw;
+}
+
+.ketua-wakil {
+    border: 5px solid #064D79;
+    border-radius: 100%;
+    width: 55vw;
+    height: 55vw;
+    margin: 0 auto;
+}
+
+.ketua-img,
+.wakil-img {
+    border-radius: 100%;
+}
+
+.gallery img {
+    border-radius: 20px;
+    width: 88vw;
+    height: 60vw;
+}
+
+
+
+/* Media Query */
+@media screen and (min-width: 375px) {
+    .jumbotron {
+        height: 100vw;
+    }
+
+    .ketua-wakil {
+        width: 51vw;
+        height: 51vw;
+    }
+
+    .ketua-wakil-img {
+        width: 46vw;
+        height: 46vw;
+        margin: 1.3vw auto;
+    }
+}
+
+@media screen and (min-width: 479px) {
+    .jumbotron {
+        height: 58vw;
+    }
+
+    .jumbo-text h1 {
+        font-size: 6vw;
+    }
+
+    .jumbo-text p {
+        font-size: 2.5vw;
+    }
+
+    .jumbo-text input {
+        font-size: 2.8vw;
+    }
+
+    .page-title {
+        font-size: 8vw;
+    }
+
+    .page-logo {
+        width: 41vw;
+        height: 41vw;
+    }
+
+    .profile-ctn h1 {
+        font-size: 4.5vw;
+    }
+
+    .profile-ctn p {
+        font-size: 2.7vw;
+    }
+
+    .ketua-wakil {
+        width: 41vw;
+        height: 41vw;
+    }
+
+    .ketua-wakil-img {
+        width: 37vw;
+        height: 37vw;
+        margin: 0.95vw auto;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .jumbotron {
+        height: 58vw;
+    }
+
+    .jumbo-text {
+        padding-top: 8vh;
+    }
+
+    .jumbo-text input {
+        font-size: 2.2vw;
+    }
+
+    .ctn-prev img {
+        border-radius: 20px;
+        height: 45vw;
+    }
+
+    .acara-img img {
+        border-radius: 20px;
+        height: 45vw;
+    }
+
+    .page-title {
+        font-size: 6vw;
+    }
+
+    .page-logo {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .profile-ctn h1 {
+        font-size: 3vw;
+    }
+
+    .profile-ctn p {
+        font-size: 2vw;
+    }
+
+    .ketua-wakil {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .ketua-wakil-img {
+        width: 27vw;
+        height: 27vw;
+        margin: 0.75vw auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        height: 52vw;
+    }
+
+    .jumbo-text {
+        padding-top: 5vh;
+    }
+
+    .footer-adrs {
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        font-size: 1.5vw;
+    }
+
+    .ctn-prev img {
+        border-radius: 20px;
+        height: 40vw;
+    }
+
+    .acara-img img {
+        border-radius: 20px;
+        height: 40vw;
+    }
+
+    .profile-ctn h1 {
+        font-size: 3vw;
+    }
+
+    .profile-ctn p {
+        font-size: 1.9vw;
+    }
+
+    .ketua-wakil-img {
+        margin: 0.8vw auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .jumbotron {
+        background-attachment: fixed;
+        height: 55vw;
+    }
+
+    .jumbo-text {
+        padding-top: 10vw;
+    }
+
+    .jumbo-text input {
+        font-size: 1.5vw;
+        letter-spacing: 0;
+    }
+
+    .vm-ctn h6 {
+        letter-spacing: 1.5px;
+    }
+
+    .vm-ctn p {
+        font-size: 1.3vw;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+
+    .ctn-title h1 {
+        font-size: 6vw;
+        margin-top: 12vw;
+    }
+
+    .ctn-title p {
+        font-size: 1.5vw;
+    }
+
+    .ctn-title button {
+        font-size: 1.5vw;
+    }
+
+    .ctn-prev img {
+        border-radius: 20px;
+        height: 20vw;
+    }
+
+    .footer-link a {
+        font-size: 1vw;
+        letter-spacing: 1px;
+    }
+
+    .copyright {
+        letter-spacing: 1px;
+        font-size: 1vw;
+    }
+
+    .acara-img img {
+        border-radius: 20px;
+        height: 25vw;
+    }
+
+    .acara-explain {
+        overflow-y: auto;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .acara-title h1 {
+        font-size: 6vw;
+        margin-top: 8vw;
+    }
+
+    .acara-title p {
+        font-size: 1.5vw;
+    }
+
+    .ketua-wakil-img {
+        width: 28vw;
+        height: 28vw;
+        margin: 0.5vw auto;
+    }
+
+    .gallery img {
+        width: 40vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .jumbotron {
+        height: 48vw;
+    }
+
+    .jumbo-text {
+        padding-top: 8vw;
+    }
+
+    .acara-explain {
+        overflow-y: auto;
+        height: 13vw;
+        margin-bottom: 15px;
+    }
+
+    .page-title {
+        font-size: 5vw;
+    }
+
+    .page-logo {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .profile-ctn h1 {
+        font-size: 2vw;
+    }
+
+    .profile-ctn p {
+        font-size: 1.2vw;
+    }
+
+    .profile-ctn p.p-sejarah {
+        text-align: center;
+    }
+
+    .profile-page {
+        background: linear-gradient(#fffffff0, #fffffff0), url("../img/geometry-bg.jpg");
+        background-attachment: fixed;
+    }
+
+    .ketua-wakil {
+        width: 28vw;
+        height: 28vw;
+    }
+
+    .ketua-wakil-img {
+        width: 26vw;
+        height: 26vw;
+        margin: 0.65vw auto;
+    }
+}
