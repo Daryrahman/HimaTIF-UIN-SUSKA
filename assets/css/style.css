@@ -7,6 +7,7 @@ font-family: 'Ruda', sans-serif;
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: visible;
 }
 
 .font-righteous {
@@ -100,6 +101,10 @@ font-family: 'Ruda', sans-serif;
     font-size: 10vw;
 }
 
+.division-title h1 {
+    font-size: 6.8vw;
+}
+
 .ctn-title input {
     border-color: #064D79;
     color: #064D79;
@@ -153,13 +158,24 @@ font-family: 'Ruda', sans-serif;
     border: 1px solid #fff !important;
 }
 
+.modal-footer input:hover {
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
 .berita {
     margin: 10vw 0;
 }
 
 .profile-page {
+    /* background-color: #e5e5f7;
+    opacity: 0.3;
+    background-image: radial-gradient(#444cf7 1.2000000000000002px, transparent 1.2000000000000002px), radial-gradient(#444cf7 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
+    background-size: 48px 48px;
+    background-position: 0 0, 24px 24px;
     background: linear-gradient(#ffffffe1, #ffffffe1), url("../img/geometry-bg.jpg");
     background-attachment: fixed;
+    z-index: 0; */
 }
 
 .page-title {
@@ -188,7 +204,7 @@ font-family: 'Ruda', sans-serif;
 
 .ketua-wakil {
     border: 5px solid #064D79;
-    border-radius: 100%;
+    border-radius: 20px;
     width: 55vw;
     height: 55vw;
     margin: 0 auto;
@@ -196,13 +212,21 @@ font-family: 'Ruda', sans-serif;
 
 .ketua-img,
 .wakil-img {
-    border-radius: 100%;
+    border-radius: 20px;
 }
 
 .gallery img {
     border-radius: 20px;
     width: 88vw;
     height: 60vw;
+}
+
+.carousel-indicators {
+    border-radius: 100%;
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 
@@ -433,6 +457,11 @@ font-family: 'Ruda', sans-serif;
         margin-top: 8vw;
     }
 
+    .division-title h1 {
+        font-size: 3.5vw;
+        margin-top: 4vw;
+    }
+
     .acara-title p {
         font-size: 1.5vw;
     }
@@ -447,6 +476,10 @@ font-family: 'Ruda', sans-serif;
         width: 40vw;
         height: 25vw;
     }
+
+    .carousel-indicators {
+        width: 80px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -460,7 +493,7 @@ font-family: 'Ruda', sans-serif;
 
     .acara-explain {
         overflow-y: auto;
-        height: 13vw;
+        height: 11vw;
         margin-bottom: 15px;
     }
 
@@ -486,7 +519,7 @@ font-family: 'Ruda', sans-serif;
     }
 
     .profile-page {
-        background: linear-gradient(#fffffff0, #fffffff0), url("../img/geometry-bg.jpg");
+        /* background: linear-gradient(#fffffff0, #fffffff0), url("../img/circle.jpg"); */
         background-attachment: fixed;
     }
 

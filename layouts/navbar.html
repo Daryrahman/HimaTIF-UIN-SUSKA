@@ -5,9 +5,9 @@ $views = $_GET['views'];
 ?> -->
 
 <script>
-    const url = window.location.search;
-    const getUrl = new URLSearchParams(url);
-    const urlVal = getUrl.get('views');
+    var url = window.location.search;
+    var getUrl = new URLSearchParams(url);
+    var urlVal = getUrl.get('views');
 </script>
 
 <!-- Navbar -->
@@ -32,11 +32,25 @@ $views = $_GET['views'];
                                 $('#profile').addClass('active');
                             });
                             break;
+
                         case "gallery":
                             $(function() {
                                 $('#gallery').addClass('active');
                             });
                             break;
+
+                        case "news":
+                            $(function() {
+                                $('#news').addClass('active');
+                            });
+                            break;
+
+                        case "event":
+                            $(function() {
+                                $('#event').addClass('active');
+                            });
+                            break;
+
                         default:
                             $(function() {
                                 $('#home').addClass('active');
@@ -54,6 +68,14 @@ $views = $_GET['views'];
                 <li class="nav-item px-md-2">
                     <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
                     <a class="nav-link font-ruda" id="home" aria-current="page" href="?views=dashboard">Beranda</a>
+                </li>
+                <li class="nav-item px-md-2">
+                    <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
+                    <a class="nav-link font-ruda" id="event" aria-current="page" href="?views=event">Acara</a>
+                </li>
+                <li class="nav-item px-md-2">
+                    <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
+                    <a class="nav-link font-ruda" id="news" aria-current="page" href="?views=news">Berita</a>
                 </li>
                 <li class="nav-item px-md-2">
                     <!-- <a <?php echo ($views == 'profile' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> href="?views=profile">Profil</a> -->
