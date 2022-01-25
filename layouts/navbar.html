@@ -1,16 +1,9 @@
-<!-- <?php
-
-$views = $_GET['views'];
-
-?> -->
-
 <script>
     var url = window.location.search;
     var getUrl = new URLSearchParams(url);
     var urlVal = getUrl.get('views');
 </script>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
     <div class="container-fluid">
         <a class="navbar-brand d-flex ms-md-4" href="#">
@@ -20,69 +13,67 @@ $views = $_GET['views'];
                 <p class="font-ruda fw-bold mb-0">UIN SUSKA RIAU</p>
             </span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end me-md-4" id="navbarNav">
             <ul class="navbar-nav">
+
                 <script>
-                    switch(urlVal) {
+                    switch (urlVal) {
                         case "profile":
-                            $(function() {
+                            $(function () {
                                 $('#profile').addClass('active');
                             });
                             break;
 
                         case "gallery":
-                            $(function() {
+                            $(function () {
                                 $('#gallery').addClass('active');
                             });
                             break;
 
                         case "news":
-                            $(function() {
+                            $(function () {
                                 $('#news').addClass('active');
                             });
                             break;
 
                         case "event":
-                            $(function() {
+                            $(function () {
                                 $('#event').addClass('active');
                             });
                             break;
 
                         default:
-                            $(function() {
+                            $(function () {
                                 $('#home').addClass('active');
                             });
                     }
-    
-                    $(document).ready(function() {
-                        $('#contact').click(function() {
+
+                    $(document).ready(function () {
+                        $('#contact').click(function () {
                             $('html, body').animate({
                                 scrollTop: $('html, body').get(0).scrollHeight
                             }, 30);
                         });
                     })
                 </script>
+
                 <li class="nav-item px-md-2">
-                    <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
                     <a class="nav-link font-ruda" id="home" aria-current="page" href="?views=dashboard">Beranda</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
                     <a class="nav-link font-ruda" id="event" aria-current="page" href="?views=event">Acara</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <!-- <a <?php echo ($views == 'dashboard' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> aria-current="page" href="?views=dashboard">Beranda</a> -->
                     <a class="nav-link font-ruda" id="news" aria-current="page" href="?views=news">Berita</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <!-- <a <?php echo ($views == 'profile' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> href="?views=profile">Profil</a> -->
                     <a class="nav-link font-ruda" id="profile" href="?views=profile">Profil</a>
                 </li>
                 <li class="nav-item px-md-2">
-                    <!-- <a <?php echo ($views == 'gallery' ? 'class="nav-link font-ruda active"' : 'class="nav-link font-ruda"'); ?> href="?views=gallery">Galeri</a> -->
                     <a class="nav-link font-ruda" id="gallery" href="?views=gallery">Galeri</a>
                 </li>
                 <li id="contact" class="nav-item px-md-2">
@@ -92,14 +83,3 @@ $views = $_GET['views'];
         </div>
     </div>
 </nav>
-<!-- End Navbar -->
-
-<!-- <script>
-    $(document).ready(function() {
-        $('#Contact').click(function() {
-            $('html, body').animate({
-                scrollTop: $('html, body').get(0).scrollHeight
-            }, 100);
-        });
-    })
-</script> -->
